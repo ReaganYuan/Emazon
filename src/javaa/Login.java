@@ -144,9 +144,7 @@ public class Login extends HttpServlet {
 
 
         }
-//Customer_ID, User_name, Pass_Word
 
-        //Article_ID, Seller,Name_Of_Item, Category, Description, Price, Quantity
         catch (ClassNotFoundException ex) {
             getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         }

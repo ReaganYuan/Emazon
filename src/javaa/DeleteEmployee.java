@@ -51,13 +51,6 @@ public class DeleteEmployee extends HttpServlet {
                     = request.getRequestDispatcher(url);
             dispatcher.forward(request, response);
 
-
-
-//            RequestDispatcher dispatcher
-//                    = request.getRequestDispatcher("");
-//            dispatcher.forward(request, response);
-
-
             DBConnect.close();
 
 
@@ -65,11 +58,7 @@ public class DeleteEmployee extends HttpServlet {
             Logger.getLogger(AddCustomer.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
             Logger.getLogger(AddCustomer.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        //PrintWriter out = response.getWriter();
-        //out.println("<p>" + request.getParameter("lastName") + "<p>");
-    }
+        } }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
